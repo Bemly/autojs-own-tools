@@ -1,13 +1,14 @@
-# MCBE粒子效果丨Add-On翻译文档
+# 本仓库信息目录
 
 #### 介绍
 
-粒子效果官方文档翻译
-未来可能会更新更多
+1.粒子效果官方文档翻译 未来可能会更新更多
+2.个人主页
 
 #### 如何使用
 
-http://bemly.gitee.io/mcbeparticletranslation/输入即可使用
+http://bemly.gitee.io/index
+输入即可使用
 
 #### 目前更新
 
