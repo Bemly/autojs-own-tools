@@ -2,19 +2,48 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script>
-    alert("awa")
+<meta name="Bemly_蓝莓小果冻" content="ParticleTranslation,蓝莓小果冻,粒子效果,函数表,我的世界,Minecraft,粒子翻译">
+<script language="JavaScript">
+function is_neizhi() {
     var ua = navigator.userAgent.toLowerCase();
     if (ua.match(/MicroMessenger/i) == "micromessenger") {
-        alert("请粘贴以下网址\n在其他浏览器打开\nbemly.gitee.io/index");
+        return "weixin";
     } else if (ua.match(/QQ/i) == "qq") {
-        alert("请粘贴以下网址\n在其他浏览器打开\nbemly.gitee.io/index");;
-    } else {
-    return false;}
-</script>
+        return "QQ"
+        alert("QQ");
+    }
+    return false;
+}
+function whatBrowser() {  
+document.Browser.Name.value=navigator.appName;  
+document.Browser.Version.value=navigator.appVersion;  
+document.Browser.Code.value=navigator.appCodeName;  
+document.Browser.Agent.value=navigator.userAgent;  
+}  
+</script> 
+<table> 
+<form name="Browser"> 
+<tr> 
+<td> 浏览器名称: </td> 
+<td> <input type="txt" name="Name" size="110%"></td> 
+</tr> 
+<tr> 
+<td> 版本号:</td> 
+<td> <input type="txt" name="Version" size="110%"></td> 
+</tr> 
+<tr> 
+<td> 代码名称: </td> 
+<td> <input type="txt" name="Code" size="110%"></td> 
+</tr> 
+<tr> 
+<td> 用户代理标识:</td> 
+<td> <input type="txt" name="Agent" size="110%"></td> 
+</tr> 
+</form> 
+</table> 
 </head>
 <body>
-
+<body onload="whatBrowser()">
 <h1> <a href="http://www.bilibili.com" title="open_bilibili" target="_blank">打开内置b站</a> </h1>
 
 <p>我的第一个段落。</p>
