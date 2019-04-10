@@ -1,0 +1,1 @@
+do{alert:"是个狼人"}while(ture);
