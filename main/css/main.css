@@ -1,0 +1,148 @@
+/*基本字体背景样式*/
+html {
+  background-color: #E3FFFF;
+  font-family: Arvo-free, 庞门正道体, 站酷快乐体;
+}
+
+/*清楚默认样式*/
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+}
+@font-face {
+  font-family: 站酷快乐体;
+  src: url('../ttf/zcoolHappyFreeFont.ttf');
+}
+@font-face {
+  font-family: 庞门正道体;
+  src: url('../ttf/gateway2.0pro.ttf');
+}
+@font-face {
+  font-family: Arvo-free;
+  src: url('../ttf/arvo.ttf');
+}
+h1, h2, h3, h4, h5, h6 {font-family: '站酷快乐体';}
+h1 {font-size: 23px;}
+h2 {font-size: 20px;}
+h3 {font-size: 17px;}
+h4 {font-size: 15px;}
+h5, h6 {font-size: 13px;}
+textarea {
+  font-family: Arvo-free, 庞门正道体, 站酷快乐体;
+  background-color: #E0FFFF;
+}
+
+/*超链接样式*/
+a:link {color: #808080;}
+a:visited {color: #696969;}
+a:active, a:hover {
+  color: red;
+  text-decoration: underline;
+}
+a {text-decoration: none;}
+
+/*底部导航条样式*/
+div#endLink {
+  text-shadow:0 0 3px black;
+  color: #E4FFFF;
+  display:inline-block;
+  text-align: center;
+  margin: 3px 0px;
+}
+/*浮动任务栏样式*/
+div#whereTo, div#whereLeft, div#whereRight, div#bgm {
+  position: fixed;
+  margin: 0;
+  opacity: 0.95;
+  z-index: 1;
+  background-color: #8FD3EA;
+  filter: alpha(opacity=95);
+  display:inline-block;
+  overflow: hidden;
+  text-align: center;
+}
+div#whereLeft {left:0;bottom:0;top:0;padding-right:3px;padding-left:20px;}
+div#whereRight {right:0;bottom:0;top:0; padding-left:3px;padding-right:20px;}
+div#whereTo {left:0;top:0;right:0;padding:0;height:61px;}
+div#bgm {left:0;bottom:0;right:0;padding-top:3.65px;}
+div#whereTo h1 img {
+  position: relative;
+  top: 17.7px;
+  border:3px solid #EEFFFF;
+  width: 48px;
+  height: 48px;
+  border-radius: 23.5px;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}
+div#whereTo h1 {
+  color: #E4FFFF;
+  position: relative;
+  bottom: 14.7px;
+  font-weight: bold;
+  text-shadow:0 0 2px black;
+}
+
+div#whereRight {-webkit-animation: faKer 0.7s cubic-bezier(0,0.47,0.32,1.97) 0s 1 both;}
+@keyframes faKer {
+  from {-webkit-transform: translate(30px,0);}
+  to {-webkit-transform: translate(20px,0);}
+}
+div#whereLeft {-webkit-animation: laMer 0.7s cubic-bezier(0,0.47,0.32,1.97) 0s 1 both;}
+@keyframes laMer {
+  from {-webkit-transform: translate(-30px,0);}
+  to {-webkit-transform: translate(-20px,0);}
+}
+div#whereTo {-webkit-animation: openTheDoor 0.6s 0s 1 both;overflow: visible;}
+@keyframes openTheDoor {
+  from {-webkit-transform: translate(0,-70px);}
+  to {-webkit-transform: translate(0,0);}
+}
+div#bgm {-webkit-animation: nextDoor 0.6s 0s 1 both;}
+@keyframes nextDoor {
+  from {-webkit-transform: translate(0,50px);}
+  to {-webkit-transform: translate(0,0);}
+}
+div.moha {-webkit-animation: naIve 1s cubic-bezier(0,0.47,0.32,1.97) 0s 1 both;}
+@keyframes naIve {
+  from {padding-bottom:40px;}
+  to {padding-bottom:auto;}
+}
+ul#menuList {
+  display:none;
+  background:rgb(240,238,238);
+  margin-top:15.6px;
+  weight:100%;
+  overflow:hidden;
+}
+ul#menuList li a {color:white;font-size:17px;}
+ul#menuList li a i {position:relative;top:1.7px;}
+ul#menuList li a:hover, ul#menuList li a:active {text-decoration: none;}
+input#menuCheckbox {display:none;}
+input#menuCheckbox:checked ~ ul#menuList {
+  display:block;
+  -webkit-animation: openTheDoor 0.6s cubic-bezier(0,0.47,0.32,1.97) -0.1s 1 both;
+}
+i.hr {display:block;height:1px;}
+/*阴影效果*/
+i.hr, ul#menuList, div#List, div#whereRight, div#whereLeft, div#bgm, div#whereTo, div.box a:link, div.box a:visited, img#bemlyImg, textarea, div.card, div.box img{
+  /*通用*/
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+  /*IE浏览器*/
+  -ms-box-shadow: 0px 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+  /*Safari Chrome浏览器*/
+  -webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+  /*火狐浏览器*/
+  -moz-box-shadow: 0px 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+  /*欧朋浏览器*/
+  -o-box-shadow: 0px 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+}
+textarea:before, textarea:after, div.card:after, div.card:before {
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  -ms-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  -moz-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  -o-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
