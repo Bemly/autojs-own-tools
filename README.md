@@ -5,7 +5,7 @@
 |内容|路径|备注|
 |:-:|:-:|:-:|
 |粒子文档翻译|[翻译戳我](http://bemly.gitee.io/index)|未来可能更新更多|
-|个人主页|[主页戳我](http://bemly.gitee.io/index)|prompt狂魔|
+|个人主页|[主页戳我](http://bemly.gitee.io/index)|狂魔|
 
 ### 目前更新
 
