@@ -1,0 +1,19 @@
+{
+  "assets": [],
+  "build": {
+    "build_id": "C646E8C7-5",
+    "build_number": 5,
+    "build_time": 1564838527312
+  },
+  "useFeatures": [],
+  "icon": "res/logo.png",
+  "launchConfig": {
+    "hideLogs": true
+  },
+  "main": "main.js",
+  "name": "纯ui模板(不含list)",
+  "packageName": "ui.bemly.demo_1",
+  "scripts": {},
+  "versionCode": 20190727,
+  "versionName": "0.0.5"
+}
