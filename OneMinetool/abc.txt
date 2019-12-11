@@ -1,0 +1,4 @@
+main left l_bg cont get_ebook_list ebookitem
+list_cover img
+list_title a text /a
+list_download onclick click_add([1])
